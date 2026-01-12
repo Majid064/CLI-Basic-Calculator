@@ -4,10 +4,13 @@ version = "0.1.0"
 description = "A simple CLI calculator for basic arithmetic operations"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "textual>=7.1.0",
+]
 
 [project.scripts]
 calc = "src.main:main"
+calc-tui = "src.tui.app:main"
 
 [dependency-groups]
 dev = [
